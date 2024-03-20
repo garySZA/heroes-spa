@@ -13,7 +13,7 @@ export const HeroCard: React.FC<HeroCardTypes> = ({ heroe }) => {
     const heroImageUrl = `/assets/heroes/${ heroe.id }.jpg`;
 
     return (
-        <div className="col ">
+        <div className="col animate__animated animate__fadeIn">
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4">
