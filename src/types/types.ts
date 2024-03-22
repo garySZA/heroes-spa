@@ -19,7 +19,6 @@ export interface State {
         id: string;
         name: string
     }
-    login: (name: string) => void 
 }
 
 export interface Action {
@@ -29,6 +28,11 @@ export interface Action {
             id: string;
             name: string
         }
+}
+
+export type User = {
+    id: string;
+    name: string;
 }
 
 export interface AuthProviderProps {

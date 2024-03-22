@@ -16,6 +16,7 @@ export const authReducer = ( state: State, action: Action ): State => {
             return {
                 ...state,
                 logged: false,
+                user: action.payload
             };
     
         default:

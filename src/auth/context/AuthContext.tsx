@@ -1,13 +1,15 @@
 import { createContext } from "react";
-import { State } from "../../types";
+import { AuthState } from ".";
 
-const defaultValue:State = {
+const defaultValue:AuthState = {
     logged: false,
     user: {
         id: '',
         name: ''
     },
-    login: () => {}
+    login: async () => {},
+    logout: () => {} 
+    
 }
 
 export const AuthContext = createContext(defaultValue);
