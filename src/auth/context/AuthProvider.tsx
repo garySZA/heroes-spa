@@ -40,8 +40,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         const action: Action = {
             type: types.logout,
             payload: {
-                id: '',
-                name: ''
+                id: 'null',
+                name: 'null'
             }
         }
         
